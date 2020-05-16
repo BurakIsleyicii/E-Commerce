@@ -16,14 +16,10 @@
     "Widgets.GoogleAnalytics",
     "Widgets.NivoSlider",
     "ExternalAuth.Facebook",
-    "Payments.PayInStore"
+    "Payments.PayInStore",
+    "Payments.CashOnDelivery"
   ],
   "PluginNamesToUninstall": [],
   "PluginNamesToDelete": [],
-  "PluginNamesToInstall": [
-    {
-      "Item1": "Payments.CashOnDelivery",
-      "Item2": "fe91d6bb-873f-4581-98c8-caf13c2399e7"
-    }
-  ]
+  "PluginNamesToInstall": []
 }
