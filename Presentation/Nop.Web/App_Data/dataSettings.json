@@ -1,5 +1,5 @@
 ﻿{
-  "DataProvider": "",
-  "DataConnectionString": null,
+  "DataProvider": "sqlserver",
+  "DataConnectionString": "Data Source=188.165.229.135;Initial Catalog=NopCommerceDb;User ID=shifty;Password=system32.34",
   "RawDataSettings": {}
 }
