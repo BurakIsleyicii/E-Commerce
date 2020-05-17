@@ -2,6 +2,6 @@
 @if (Model.EmailAFriendEnabled)
 {
     <div class="email-a-friend">
-        <input type="button" value="@T("Products.EmailAFriend")" class="btn btn-default email-a-friend-button" onclick="setLocation('@Url.RouteUrl("ProductEmailAFriend", new { productId = Model.Id })')" />
+        <input type="button" class="btn btn-default email-a-friend-button" onclick="setLocation('@Url.RouteUrl("ProductEmailAFriend", new { productId = Model.Id })')" />
     </div>
 }

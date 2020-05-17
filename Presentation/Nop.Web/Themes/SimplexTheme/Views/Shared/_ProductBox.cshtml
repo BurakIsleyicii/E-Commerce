@@ -73,7 +73,7 @@
             </div>
             @if (Model.ReviewOverviewModel.AllowCustomerReviews)
             {
-                int ratingPercent = 0;
+                @*int ratingPercent = 0;
                 if (Model.ReviewOverviewModel.TotalReviews != 0)
                 {
                     ratingPercent = ((Model.ReviewOverviewModel.RatingSum*100)/Model.ReviewOverviewModel.TotalReviews)/5;
@@ -83,7 +83,7 @@
                         <div style="width: @(ratingPercent)%">
                         </div>
                     </div>
-                </div>
+                </div>*@
             }
             <p class="description">
                 @Html.Raw(Model.ShortDescription)
