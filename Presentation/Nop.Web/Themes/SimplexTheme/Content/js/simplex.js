@@ -51,7 +51,7 @@ $(document).ready(function () {
         loop: true,
         dots: false,
         nav: true,
-        navText: ["prev", "next"],
+        navText: ["geri", "ileri"],
         autoPlay: false,
         lazyLoad: true,
         responsive: {
@@ -80,7 +80,7 @@ $(document).ready(function () {
         loop: true,
         dots: false,
         nav: true,
-        navText: ["prev", "next"],
+        navText: ["geri", "ileri"],
         autoPlay: true,
         lazyLoad: true,
         responsive: {
@@ -109,7 +109,7 @@ $(document).ready(function () {
         loop: true,
         dots: false,
         nav: true,
-        navText: ["prev", "next"],
+        navText: ["geri", "ileri"],
         autoPlay: false,
         lazyLoad: true,
         responsive: {
@@ -138,7 +138,7 @@ $(document).ready(function () {
         loop: true,
         dots: false,
         nav: true,
-        navText: ["prev", "next"],
+        navText: ["geri", "ileri"],
         autoPlay: false,
         lazyLoad: true,
         responsive: {

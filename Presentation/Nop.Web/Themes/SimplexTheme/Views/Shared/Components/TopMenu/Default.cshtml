@@ -42,10 +42,6 @@
                 {
                     <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a></li>
                 }
-                @if (Model.DisplayCustomerInfoMenuItem)
-                {
-                    <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
-                }
                 @if (Model.BlogEnabled && Model.DisplayBlogMenuItem)
                 {
                     <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
@@ -58,6 +54,11 @@
                 {
                     <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
                 }
+                @if (Model.DisplayCustomerInfoMenuItem)
+                {
+                    <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
+                }
+                @await Component.InvokeAsync("LoginLogout")
                 @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMenuAfter })
             </ul>
         </div><!-- /.navbar-collapse -->

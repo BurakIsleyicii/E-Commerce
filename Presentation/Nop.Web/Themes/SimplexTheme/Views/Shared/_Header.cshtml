@@ -1,6 +1,7 @@
-﻿<div class="header">
+﻿@inject Nop.Core.IWebHelper webHelper
+<div class="header">
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderBefore })
-    <div class="header-upper">
+    @*<div class="header-upper">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -21,7 +22,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMiddle })
     <div class="header-lower">
         <div class="container">

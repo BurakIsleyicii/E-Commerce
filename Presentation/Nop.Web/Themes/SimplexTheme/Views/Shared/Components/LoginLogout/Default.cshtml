@@ -1,0 +1,11 @@
+﻿@inject Nop.Core.IWebHelper webHelper
+
+@if (ViewBag.isLogin)
+{
+    <li><a href="@Url.RouteUrl("Logout")">@T("Account.Logout")</a></li>
+}
+else
+{
+    var returnUrl = webHelper.GetRawUrl(Context.Request);
+    <li><a href="@Url.RouteUrl("Login", new { returnUrl })">@T("Account.Login")</a></li>
+}
