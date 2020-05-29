@@ -25,7 +25,7 @@
 <div class="product-item clearfix" data-productid="@Model.Id">
     <div class="picture">
         <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })" title="@Model.DefaultPictureModel.Title">
-            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
+            <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" style="max-height: 140px; max-width: 231px;"/>
         </a>
         <div class="wishlist-compare-wrapper">
             @if (!Model.ProductPrice.DisableWishlistButton)
